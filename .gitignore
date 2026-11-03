@@ -15,6 +15,9 @@ venv/
 .venv/
 ENV/
 
+*.db
+*.sqlite3
+
 # Environment files
 .env
 .env.production
