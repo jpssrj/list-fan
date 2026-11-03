@@ -21,12 +21,12 @@ onMounted(() => {
       <header class="bg-brutal-yellow p-6 border-3 border-brutal-dark shadow-brutal-card relative overflow-hidden">
         <!-- Sticker decorativo brutalista -->
         <div class="inline-block bg-brutal-lavender text-brutal-dark px-2.5 py-0.5 text-xs font-black uppercase border-2 border-brutal-dark shadow-brutal-sm mb-3">
-          ★ NEOBRUTALISM // TO-DO
+          List Fan
         </div>
 
         <div class="flex items-baseline justify-between flex-wrap gap-2">
           <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-brutal-dark uppercase">
-            TASK // BOARD
+            Minha lista de tarefas
           </h1>
           <span class="text-xs font-bold bg-white text-brutal-dark px-2.5 py-1 border-2 border-brutal-dark shadow-brutal-sm">
             {{ store.taskCounts.completed }} DE {{ store.taskCounts.all }} FEITAS
@@ -44,7 +44,7 @@ onMounted(() => {
         role="alert"
       >
         <div class="flex items-center gap-2">
-          <span class="font-black text-lg">⚠️</span>
+          <span class="font-black text-lg"><i class="fa-solid fa-triangle-exclamation"></i></span>
           <p class="text-sm font-bold">{{ store.errorMessage }}</p>
         </div>
         <button
@@ -92,7 +92,7 @@ onMounted(() => {
             v-if="!store.isLoading && store.filteredTasks.length === 0"
             class="bg-white p-8 border-3 border-brutal-dark shadow-brutal text-center flex flex-col items-center justify-center gap-2"
           >
-            <span class="text-3xl">✨</span>
+            <span class="text-3xl" id="icon-clipboard-pending"><i class="fa-solid fa-clipboard-question fa-2xl" style="margin-bottom: 0.6em;"></i></span>
             <p class="font-bold text-base uppercase text-brutal-dark">
               Nenhuma tarefa encontrada
             </p>
@@ -119,10 +119,7 @@ onMounted(() => {
 
       <!-- Rodapé Tecnológico Neobrutalista -->
       <footer class="mt-8 text-center text-xs font-bold text-neutral-500 flex flex-wrap items-center justify-center gap-2">
-        <span class="border border-brutal-dark px-2 py-0.5 bg-white">Python + FastAPI</span>
-        <span class="border border-brutal-dark px-2 py-0.5 bg-white">Vue 3 + Pinia</span>
-        <span class="border border-brutal-dark px-2 py-0.5 bg-white">Tailwind CSS</span>
-        <span class="border border-brutal-dark px-2 py-0.5 bg-white">Vercel Serverless</span>
+        <span class="border border-brutal-dark px-2 py-0.5 bg-white">Desenvolvido por <a href="https://linkedin.com/in/jpssrj">João Pedro Santos</a> como 3º desafio da Alura + Google</span>
       </footer>
 
     </div>
